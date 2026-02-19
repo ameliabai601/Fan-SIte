@@ -1,0 +1,34 @@
+body {
+  font-family: system-ui;
+  background: #fcf7ff;
+  color: black;
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    text-indent: 4em;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
